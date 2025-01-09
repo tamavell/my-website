@@ -1,0 +1,44 @@
+/* ローディング画面のスタイル */
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;  /* 背景色を白に */
+    color: black;  /* 文字色を黒に */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;  /* 文字サイズ */
+    z-index: 9999; /* 他の要素より前に表示 */
+}
+
+/* dot にアニメーション */
+.dots {
+    display: inline-block;
+}
+
+.dot {
+    display: inline-block;
+    animation: bounce 1.5s infinite ease-in-out;
+}
+
+.dot:nth-child(1) {
+    animation-delay: 0s;
+}
+.dot:nth-child(2) {
+    animation-delay: 0.2s; /* 2番目の点を遅延 */
+}
+.dot:nth-child(3) {
+    animation-delay: 0.4s; /* 3番目の点を遅延 */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* 上に跳ねる */
+    }
+}

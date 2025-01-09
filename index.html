@@ -3,12 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>タイトル</title>
+    <style>
+        /* ローディング画面のスタイル */
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            z-index: 9999; /* 他の要素より前に表示 */
+        }
+    </style>
 </head>
 <body>
-    <h1>ようこそ！</h1>
-    <p>これは初めて作ったWebサイトです。</p>
-    <script src="script.js"></script>
+
+    <!-- ローディング画面 -->
+    <div id="loading">
+        読み込み中...
+    </div>
+
+    <header>
+        <h1>サイトのタイトル</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>セクション1の見出し</h2>
+            <p>ここにコンテンツが入ります。</p>
+        </section>
+
+        <section>
+            <h2>セクション2の見出し</h2>
+            <p>ここにもコンテンツがあります。</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 あなたのサイト名</p>
+    </footer>
+
+    <script>
+        // ページの読み込みが完了したらローディング画面を非表示にする
+        window.onload = function() {
+            document.getElementById('loading').style.display = 'none';
+        };
+    </script>
+
 </body>
 </html>

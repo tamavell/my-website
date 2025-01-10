@@ -5,16 +5,16 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: white;  /* 背景色を白に */
-    color: black;  /* 文字色を黒に */
+    background-color: white;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 36px;  /* 文字サイズ */
-    z-index: 9999; /* 他の要素より前に表示 */
+    font-size: 48px;
+    z-index: 9999;
+    font-family: "Jersey 10", serif; /* Jersey 10を適用 */
 }
 
-/* dot にアニメーション */
 .dots {
     display: inline-block;
 }
@@ -27,11 +27,13 @@
 .dot:nth-child(1) {
     animation-delay: 0s;
 }
+
 .dot:nth-child(2) {
-    animation-delay: 0.2s; /* 2番目の点を遅延 */
+    animation-delay: 0.2s;
 }
+
 .dot:nth-child(3) {
-    animation-delay: 0.4s; /* 3番目の点を遅延 */
+    animation-delay: 0.4s;
 }
 
 @keyframes bounce {
@@ -39,6 +41,45 @@
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px); /* 上に跳ねる */
+        transform: translateY(-10px);
     }
+}
+
+/* ウェルカム画面のスタイル */
+#welcome {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    z-index: 9999;
+}
+
+/* タイプライターにJersey 10を適用 */
+#typewriter {
+    font-size: 48px;
+    font-family: "Jersey 10", serif; /* Jersey 10を適用 */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Jersey 10の共通スタイル（ようこそとポートフォリオのみに適用） */
+.jersey-10-regular {
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;
 }

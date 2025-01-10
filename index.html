@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>タイトル</title>
+    <title>tamavell</title>
+    <!-- Google Fontsリンク -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> <!-- 外部CSSをリンク -->
 </head>
 <body>
@@ -14,25 +18,16 @@
         Now Loading<span class="dots"><span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></span>
     </div>
 
-    <header>
-        <h1>サイトのタイトル</h1>
-    </header>
+    <!-- ウェルカム画面 -->
+    <div id="welcome" style="display: none;">
+        <div id="typewriter" class="jersey-10-regular"></div>
+    </div>
 
-    <main>
-        <section>
-            <h2>セクション1の見出し</h2>
-            <p>ここにコンテンツが入ります。</p>
-        </section>
-
-        <section>
-            <h2>セクション2の見出し</h2>
-            <p>ここにもコンテンツがあります。</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 あなたのサイト名</p>
-    </footer>
+    <!-- メインコンテンツ -->
+    <div id="mainContent" style="display: none;">
+        <h1>メインコンテンツ画面</h1>
+        <p>ここにメインコンテンツを追加してください。</p>
+    </div>
 
     <script src="script.js"></script> <!-- 外部JSをリンク -->
 </body>

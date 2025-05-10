@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>tamavell</title>
-    <!-- Google Fontsリンク -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> <!-- 外部CSSをリンク -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -25,17 +25,21 @@
 
     <!-- メインコンテンツ -->
     <div id="mainContent" style="display: none;">
-        <h1>tamavell's Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="about.html">自己紹介</a></li>
-                <li><a href="skills.html">スキル</a></li>
-                <li><a href="contact.html">お問い合わせ</a></li>
-                <li><a href="sns.html">SNSリンク</a></li>
-            </ul>
+        <h1 class="title">tamavell's Portfolio</h1>
+        <nav class="main-nav">
+            <a href="about.html" class="top-left">自己紹介</a>
+            <a href="skills.html" class="top-right">スキル</a>
+            <a href="contact.html" class="bottom-left">お問い合わせ</a>
+            <div class="bottom-right">
+                <div class="sns-title">各種SNS</div>
+                <div class="sns-links">
+                    <span>X　～～～～</span><br>
+                    <span>Instagram　～～～～</span>
+                </div>
+            </div>
         </nav>
     </div>
 
-    <script src="script.js"></script> <!-- 外部JSをリンク -->
+    <script src="script.js"></script>
 </body>
 </html>
